@@ -1,0 +1,110 @@
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.servicios--container {
+  width: 100%;
+  align-items: end;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  color: white !important;
+  margin: 30px 0;
+  height: 700px;
+  text-decoration: none;
+}
+
+.servicios--title {
+  text-align: center;
+  position: absolute;
+  font-size: 150px;
+  font-family: "Lovelo";
+  align-items: center;
+  margin-top: 240px;
+}
+
+.serviciosCard--subtitle {
+  position: absolute;
+  width: 33%;
+}
+
+.servicios--component {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+}
+
+.servicioCard--container {
+  width: 35%;
+  height: 700px;
+}
+
+.servicioCard--container:hover {
+  text-decoration: underline;
+}
+
+.servicioCard--container h1:hover {
+  text-decoration: underline;
+}
+
+.servicioCard--image {
+  width: 100%;
+}
+
+.servicioCard-number {
+  z-index: 1;
+  margin: -100px 0;
+  font-size: 70px;
+}
+
+@media screen and (max-width: 1190px) {
+  .servicioCard--container,
+  .servicios--container {
+    height: 600px;
+  }
+  .servicios--title {
+    margin-top: 180px;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .servicios--title {
+    font-size: 50px;
+    margin-top: 18% !important;
+  }
+
+  .servicios--container {
+    height: 450px;
+  }
+  .servicioCard--container {
+    height: 200px !important;
+  }
+
+  .serviciosCard--subtitle {
+    font-size: 15px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .servicioCard-number {
+    font-size: 25px;
+    position: relative;
+    top: 65px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .servicios--container {
+    height: 350px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .servicios--container {
+    height: 100%;
+  }
+}

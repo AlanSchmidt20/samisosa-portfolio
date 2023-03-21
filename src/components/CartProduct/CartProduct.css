@@ -1,0 +1,21 @@
+.cartProduct-title-total-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 10px;
+  justify-content: center;
+  width: 49%;
+}
+
+.cartProduct-container {
+  display: flex;
+}
+
+.cartProduct-total-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cartProduct-title {
+  margin: 0;
+}

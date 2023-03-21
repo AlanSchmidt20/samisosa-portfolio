@@ -1,0 +1,95 @@
+.leftImages-rightImages-container {
+  display: flex;
+  padding-top: 40px;
+  justify-content: space-between;
+  background-color: #2a2722;
+  color: white;
+}
+
+.contenidoParaTuMarca-images {
+  /* height: 26%; */
+  height: 100%;
+  margin-bottom: 10px;
+}
+
+.contenidoParaTuMarca-images-container {
+  display: flex;
+  flex-direction: column;
+  width: 12%;
+}
+
+.title-items-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title-items-container h1 {
+  font-size: 90px;
+  margin-top: 20px;
+  text-align: center;
+  font-family: "RoxboroughCF";
+}
+
+.title-items-container li {
+  font-size: 30px;
+  margin-bottom: 30px;
+  font-family: "Lovelo";
+}
+
+.title-items-container ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  margin: 15% 0;
+}
+
+.contenidoParaTuMarca-items:hover {
+  text-decoration: underline;
+  text-underline-offset: 8px;
+}
+
+.list-icon {
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+
+@media screen and (max-width: 1020px) {
+  .leftImages-rightImages-container {
+    flex-direction: column;
+  }
+  .contenidoParaTuMarca-images-container {
+    flex-direction: row;
+    width: 100%;
+  }
+  .contenidoParaTuMarca-images {
+    width: 30%;
+    margin: auto;
+  }
+
+  .title-items-container h1 {
+    font-size: 50px;
+  }
+
+  .title-items-container li {
+    font-size: 15px;
+  }
+
+  .title-items-container ul {
+    padding: 5% 5%;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 786px) {
+  .title-items-container h1 {
+    font-size: 35px;
+    text-align: right;
+    width: 100%;
+  }
+
+  .title-items-container ul {
+    padding: 5% 0;
+    margin: 0;
+  }
+}

@@ -1,0 +1,104 @@
+.quienSoy--container {
+  display: flex;
+  align-items: center;
+  height: 680px;
+  background-color: #e9e4dc;
+  padding-top: 20px;
+}
+
+.quienSoy--title {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-size: 150px;
+  font-weight: 200;
+  margin: 0;
+  font-family: Yeseva One;
+}
+
+.animate__fadeInDown {
+  width: 50% /* !important */;
+  --animate-duration: 1.5s;
+  --animation-delay: 1s;
+  /*   margin: 0 60px;
+ */
+}
+
+.quienSoy--subTitle {
+  font-weight: 300;
+  font-size: 70px;
+  font-family: Arsenica Antiqua;
+  right: 10px;
+  /* z-index: 0; */
+  position: relative;
+}
+
+.quienSoy--image {
+  border-radius: 5px;
+  width: 30% !important;
+  margin-left: -39px;
+  z-index: 9;
+}
+
+.quienSoy--description {
+  width: 100% !important;
+  font-weight: 200;
+  line-height: 2;
+  font-family: "Roxborogh CF";
+  font-size: larger;
+  margin: 0 50px;
+}
+
+@media screen and (max-width: 1020px) {
+  .quienSoy--container {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    z-index: 11;
+    height: 1340px;
+  }
+  .quienSoy--title {
+    writing-mode: initial;
+    transform: none;
+    font-size: 85px;
+    text-align: center;
+    inline-size: inherit;
+    margin-bottom: -29px;
+  }
+
+  .quienSoy--subTitle {
+    position: static;
+    margin-bottom: 20px;
+  }
+
+  .quienSoy--image {
+    width: 85% !important;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+
+  .animate__fadeInDown {
+    width: 100%;
+    margin: 0;
+    animation-play-state: paused;
+    display: contents;
+  }
+
+  .quienSoy--description {
+    font-size: medium;
+    margin: 0;
+    height: 610px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .quienSoy--container {
+    height: 900px;
+  }
+}
+
+@media (min-width: 720px) and (max-width: 1020px) {
+  .quienSoy--container {
+    height: 1650px;
+  }
+}

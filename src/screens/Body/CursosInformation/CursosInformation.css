@@ -1,0 +1,55 @@
+.cursosInformation-container {
+  padding-top: 40px;
+  background-color: #284838;
+}
+
+.cursosIntroduction-title {
+  color: white;
+  font-size: 56px;
+  font-weight: bold;
+
+  transform: skew(-20deg);
+}
+
+.cursosIntroduction-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 40px 0;
+}
+
+.cursosIntroduction-subDescription {
+  margin-bottom: 50px;
+  color: white;
+  font-size: 20px;
+}
+
+.cursosIntroduction-description {
+  background-color: #e9e4dc;
+  width: 75%;
+  border-radius: 15px;
+  font-size: 21.6px;
+  line-height: 30px;
+}
+
+.cursosItems-container {
+  color: white;
+}
+
+.cursosItems-title {
+  font-size: 67px;
+}
+
+.cursosItems-title-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 40px 0;
+}
+
+.cursosItems-item {
+  font-size: 20px;
+  margin: 25px 20px;
+}

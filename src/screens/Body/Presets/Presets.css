@@ -1,0 +1,77 @@
+.presets-container {
+  background-image: url("../../../images/presets-backgroundImage.PNG");
+  background-size: cover;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.presets-title-description {
+  color: white;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  margin: auto 60px;
+  justify-content: center;
+}
+
+.presets-title {
+  font-family: "Yeserva One";
+  font-size: 90px;
+  letter-spacing: 10px;
+  margin: 0;
+}
+
+.presets-description {
+  width: 80%;
+  font-family: "Shifunk Light";
+  line-height: 2;
+  font-size: 25px;
+  font-weight: lighter;
+}
+
+.presets-images {
+  display: flex;
+  width: 60%;
+  height: 550px;
+  justify-content: space-evenly;
+}
+
+@media screen and (max-width: 1020px) {
+  .presets-container {
+    padding-top: 20px;
+    width: 100%;
+    display: block;
+    height: 700px;
+  }
+
+  .presets-title-description,
+  .presets-description {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .presets-title {
+    font-size: 50px;
+  }
+
+  .presets-description {
+    font-size: 20px;
+    display: flex;
+  }
+
+  .presets-images {
+    width: 100%;
+    height: 300px;
+    justify-content: space-around;
+  }
+}
+
+/* @media (min-width: 720px) and (max-width: 1020px); */

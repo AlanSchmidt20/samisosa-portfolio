@@ -1,0 +1,83 @@
+.css-1aquho2-MuiTabs-indicator,
+.css-ttwr4n {
+  background-color: black !important;
+}
+
+.navBar--tabs {
+  margin: 0 20px;
+}
+
+/* Each single tab */
+.css-heg063-MuiTabs-flexContainer,
+.css-k008qs {
+  justify-content: space-evenly;
+}
+
+nav {
+  display: contents;
+}
+
+.nav-btn {
+  display: none !important;
+}
+
+.shoppingCart-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 1020px) {
+  nav {
+    position: fixed;
+    top: 0;
+    height: 100%; /* puede que no sea necesario */
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    /*    transition: 1s;
+    transform: translateY(-80vh); */
+    transition: transform 0.2s;
+    transform: translateX(100vh);
+    z-index: 999;
+    background: white;
+    background-image: url("../../../images/samiLogo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+
+  .nav-btn {
+    display: inline !important;
+  }
+
+  .css-1aquho2-MuiTabs-indicator {
+    display: none;
+  }
+
+  .navbar--tabs {
+    margin-right: 0 !important;
+  }
+  .css-8atqhb {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .responsive--nav {
+    transform: none;
+  }
+  /*  .css-heg063-MuiTabs-flexContainer {
+    display: block !important;
+  }
+ */
+  .MuiTabs-flexContainer {
+    display: flex !important;
+    flex-direction: column;
+  }
+  .tab--item {
+    display: block !important;
+  }
+}
