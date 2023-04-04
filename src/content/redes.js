@@ -1,21 +1,16 @@
-/* import instagramIcon from "../images/icons/instagramIcon.png";
-import pinterestIcon from "../images/icons/pinterestIcon.png";
-import tiktokIcon from "../images/icons/tiktokIcon.png";
-import youtubeIcon from "../images/icons/youtubeIcon.png"; */
-
 export const redes1 = [
   {
     id: "1",
     image: require("../images/redesImage1.png"),
     icon: require("../images/icons/instagramIcon.png"),
     title: "@samisosa.c",
-    subTitle: "Instagam",
+    subTitle: "Instagram",
     link: "https://instagram.com/samisosa.c?igshid=YmMyMTA2M2Y=",
   },
   {
     id: "2",
     image: require("../images/redesImage1.png"),
-    icon: require("../images/icons/tiktokIcon.png"),
+    icon: require("../images/icons/pinterestIcon.png"),
     title: "@samisosac",
     subTitle: "Pinterest",
     link: "https://pin.it/1BbroT1",
@@ -26,7 +21,7 @@ export const redes2 = [
   {
     id: "2",
     image: require("../images/redesImage2.png"),
-    icon: require("../images/icons/pinterestIcon.png"),
+    icon: require("../images/icons/tiktokIcon.png"),
     title: "@samisosa.c",
     subTitle: "Tiktok",
     link:

@@ -3,16 +3,26 @@ import Header from "./components";
 import Home from "./screens";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import About from "./screens/Body/About";
-import Cursos from "./screens/Body/Cursos";
 import Servicios from "./screens/Body/Servicios/Servicios";
-import Presets from "./screens/Body/Presets/Presets";
 import Redes from "./screens/Body/Redes/Redes";
 import Contact from "./screens/Body/Contact/Contact";
 import PresetsInformation from "./screens/Body/PresetsInformation/PresetsInformation";
 import CartProvider from "./CartContext";
 import ContenidoParaTuMarca from "./components/ContenidoParaTuMarca/ContenidoParaTuMarca";
-import Success from "./screens/Body/Success/Success";
-import CursosInformation from "./screens/Body/CursosInformation";
+/* import Success from "./screens/Body/Success/Success";
+ */ import CursosInformation from "./screens/Body/CursosInformation";
+import React, { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
 
 function App() {
   return (
@@ -20,6 +30,7 @@ function App() {
       <BrowserRouter>
         <Header />
         <div className="screens--wraper">
+          <ScrollToTop />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="quienSoy" element={<About />} />
@@ -32,7 +43,7 @@ function App() {
               path="contenidoParaTuMarca"
               element={<ContenidoParaTuMarca />}
             />
-            <Route path="success" element={<Success />} />
+            {/* <Route path="success" element={<Success />} /> */}
           </Routes>
         </div>
       </BrowserRouter>

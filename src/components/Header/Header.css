@@ -1,6 +1,9 @@
 .header--icon {
-  height: 70px !important;
-  margin-left: 20px;
+  height: 50px !important;
+  margin-left: 10%;
+  margin-top: 10%;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .header--container {
@@ -8,7 +11,7 @@
   height: 70px;
   align-items: center;
   /*   margin: 20px; */
-  justify-content: center;
+  justify-content: flex-start !important;
   position: fixed;
   width: 100%;
   background: white;

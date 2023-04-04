@@ -2,37 +2,6 @@ import React from "react";
 import quienSoyImage from "../../../images/quienSoyImage.png";
 import "animate.css/animate.min.css";
 import "./About.css";
-import useWindowSize from "../../../hooks/useWindowSize";
-
-/* const AboutWeb = () => {
-  return (
-    <>
-      <h1 className="quienSoy--title">CAMILA</h1>
-      <img
-        alt="quienSoyImage"
-        className="quienSoy--image"
-        src={quienSoyImage}
-        fit="contain"
-        style={{ background: "transparent", animation: "none" }}
-      />
-    </>
-  );
-};
-const AboutMobile = () => {
-  return (
-    <>
-      <img
-        style={{ marginTop: "20px" }}
-        alt="quienSoyImage"
-        className="quienSoy--image"
-        src={quienSoyImage}
-        fit="contain"
-        style={{ background: "transparent", animation: "none" }}
-      />
-      <h1 className="quienSoy--title">CAMILA</h1>
-    </>
-  );
-}; */
 
 const About = () => {
   /*   const [width] = useWindowSize();
@@ -46,7 +15,7 @@ const About = () => {
         fit="contain"
         style={{ background: "transparent", animation: "none" }}
       />
-      <div className="animate__animated animate__fadeInDown">
+      <div className="animate__animated animate__fadeInDown animate__slow quienSoy-subTitle-description-container">
         <h1 className="quienSoy--subTitle">QUIEN SOY</h1>
         <p className="quienSoy--description">
           Mi nombre es Camila Sosa, pero me dicen Sami, soy una mujer creativa,

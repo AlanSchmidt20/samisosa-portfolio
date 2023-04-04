@@ -1,0 +1,47 @@
+.checkout-title {
+  padding: 0 !important;
+}
+
+.checkout-input {
+  width: 90% !important;
+}
+
+.CbuButton-container {
+  display: flex;
+  align-items: center;
+}
+
+.CbuButton-container button {
+  background: #e9e4dc;
+  border: transparent;
+}
+
+.copy-button {
+  margin: 0 3%;
+}
+
+.copy-button:hover {
+  transform: scale(1.2);
+}
+
+.copy-button:active {
+  transform: scale(1.1);
+}
+
+.checkout-paso1-form {
+  display: flex;
+  align-items: center;
+}
+
+.checkout-paso1-form button {
+  background: #e9e4dc;
+  border: transparent;
+}
+
+.checkout-sendButton:hover {
+  transform: scale(1.2);
+}
+
+.checkout-sendButton:active {
+  transform: scale(1.1);
+}

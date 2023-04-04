@@ -1,7 +1,9 @@
 .redes-container {
-  height: 550px;
+  height: 100%;
   background-color: #e9e4dc;
   display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 25px 0;
 }
 
@@ -105,6 +107,7 @@ h4 {
     margin: 0;
     align-items: flex-start;
     padding-bottom: 150px;
+    margin-bottom: 5%;
   }
 
   .redes1-container {

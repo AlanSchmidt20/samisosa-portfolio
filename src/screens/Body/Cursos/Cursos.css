@@ -3,18 +3,15 @@
   align-items: center;
   height: 750px;
   width: 100%;
-  /*   background-size: contain;
-  background-repeat: round; */
   background-color: #e0cfb4;
   align-items: center;
+  justify-content: center;
 }
 
 .cursos--title {
   font-weight: 600;
-  font-size: 50px;
+  font-size: 90px;
   font-family: Lovelo;
-  color: white;
-  margin-left: 20px;
   width: 75%;
 }
 
@@ -22,36 +19,50 @@
   font-family: "Cardo" !important;
   line-height: 2;
   font-size: larger;
-  width: 60%;
   color: white;
+  width: 82%;
 }
 
 .cursos-title-description-container {
   width: 80% !important;
-  background-image: url(../../../images//CursoImage1.png);
+  background-image: url(../../../images/cursoPortada.png);
   background-size: cover;
-  /* background-repeat: round;
- */
   height: 650px;
-  margin-left: 90px;
   z-index: 1;
   object-fit: fill;
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
+}
+
+.cursos-title-subDescription-button-container {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: space-between;
+  margin: 0 3%;
+}
+
+.cursos-subDescription {
+  margin: 0;
+  font-size: 30px;
 }
 
 .cursos-description-button {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-end;
   align-items: center;
-  width: 100%;
-  align-items: flex-end;
-  height: 400px;
+  width: 26%;
+  align-items: center;
+  text-align: right;
+  padding-right: 1%;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 1;
 }
 .animate_fadeInDown {
   --animate-duration: 7s;
   --animation-delay: 7s;
+  width: 100% !important;
 }
 
 .cursos-button-container {
@@ -71,38 +82,33 @@
 }
 
 .cursos-subTitle-container {
-  width: 0;
+  width: 10%;
 }
 
 .cursos-subTitle {
   writing-mode: vertical-rl;
   font-size: 180px;
   font-weight: bold;
-  margin-left: -50px;
+  margin-left: -60%;
   font-family: "Yeserva One";
 }
 
-.cursos-title-subDescription-container {
-  margin: 35px 0;
-}
-
-.cursos-subDescription {
-  color: white;
-  margin: 0 20px;
-}
-
-@media screen and (min-width: 960px) {
+/* @media screen and (min-width: 960px) {
   .cursos-title-description-container {
     background-repeat: round;
   }
-
-  .cursos-description-button {
-    height: 360px;
-  }
-}
+} */
 /* posible 800px, pero tengo que arreglar el titulo */
-@media screen and (max-width: 1024px) {
-  .cursos--container {
+
+@media screen and (max-width: 1130px) {
+  .cursos-subTitle {
+    font-size: 160px;
+  }
+  .cursos-description-button {
+    width: 46%;
+  }
+
+  /*   .cursos--container {
     margin: 0;
     width: 100%;
     height: 820px;
@@ -114,25 +120,12 @@
     font-size: 20px;
     width: auto;
     text-align: right;
-    /* margin-right: 21px; */
     display: flex;
     justify-content: flex-end;
     width: 90%;
   }
 
-  .cursos-subTitle {
-    writing-mode: unset;
-    font-size: 85px;
-    margin-left: 0;
-    margin-bottom: -25px;
-    margin-top: 0;
-    margin: 0;
-    padding-top: 30px;
-  }
-  .cursos-subTitle-container {
-    text-align: center;
-    width: auto;
-  }
+
 
   .cursos-description-button {
     display: contents;
@@ -147,22 +140,6 @@
     width: 100%;
     position: relative;
     top: 45%;
-  }
-
-  /*   .cursos-button-container */
-
-  .cursos-title-description-container {
-    width: 95% !important;
-    background-image: url(../../../images//cursosImage.png);
-    margin-left: 0;
-    margin: 0 10px;
-    background-size: cover;
-    background-repeat: round;
-    z-index: 1;
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
   }
 
   .cursos-button-container {
@@ -181,7 +158,7 @@
     text-align: center !important;
   }
 
-  .cursos-title-subDescription-container {
+  .cursos-title-subDescription-button-container {
     margin: 0;
     text-align: right;
   }
@@ -189,7 +166,7 @@
   .cursos-subDescription {
     margin: 0 20px;
     width: 91%;
-  }
+  } */
 }
 
 /* @media (min-width: 720px) and (max-width: 1020px) {
@@ -212,3 +189,61 @@
     width: 100%;
   }
 } */
+
+@media screen and (max-width: 786px) {
+  .cursos--container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding-bottom: 5%;
+  }
+
+  .cursos--title {
+    font-size: 50px;
+  }
+
+  .cursos-subTitle {
+    writing-mode: unset;
+    font-size: 85px;
+    margin-left: 0;
+    margin-bottom: -9%;
+
+    margin-top: 0;
+    padding-top: 30px;
+  }
+  .cursos-subTitle-container {
+    text-align: center;
+    width: auto;
+  }
+
+  .cursos-subDescription {
+    font-size: 20px;
+  }
+
+  .cursos-title-description-container {
+    width: 90% !important;
+    display: flex;
+    flex-direction: column;
+    background-image: url(../../../images/cursosPortadaPhone.JPG);
+    height: 74vh;
+    height: 100%;
+  }
+  .cursos-description-button {
+    width: 99%;
+    margin-top: 86%;
+  }
+
+  .cursos-description {
+    font-size: 15px;
+    text-align: right;
+  }
+
+  .cursos-button-container {
+    margin: 5% 0;
+    justify-content: center;
+  }
+  .cursosPortada-button {
+    margin: 0 !important;
+    font-size: 20px !important;
+  }
+}

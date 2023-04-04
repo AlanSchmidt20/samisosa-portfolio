@@ -10,7 +10,11 @@ const ContenidoParaTuMarca = () => (
   <div className="leftImages-rightImages-container">
     <div className="contenidoParaTuMarca-images-container">
       {leftImages.map((image) => (
-        <img src={`${image.image}`} className="contenidoParaTuMarca-images" />
+        <img
+          src={`${image.image}`}
+          className="contenidoParaTuMarca-images"
+          alt="contenidoParaTuMarca"
+        />
       ))}
     </div>
     <div className="title-items-container">
@@ -18,13 +22,8 @@ const ContenidoParaTuMarca = () => (
       <ul>
         {items.map((item) => (
           <li key={item.id} className="contenidoParaTuMarca-items">
-            <a href={item.link} target="_blank">
-              <img
-                src={MyIcon}
-                alt="my-icon"
-                width="7%"
-                className="list-icon"
-              />
+            <a href={item.link} target="_blank" rel="noreferrer">
+              <img src={MyIcon} alt="myIcon" width="7%" className="list-icon" />
               {item.description}
             </a>
           </li>
@@ -33,7 +32,11 @@ const ContenidoParaTuMarca = () => (
     </div>
     <div className="contenidoParaTuMarca-images-container">
       {rightImages.map((image) => (
-        <img src={`${image.image}`} className="contenidoParaTuMarca-images" />
+        <img
+          src={`${image.image}`}
+          className="contenidoParaTuMarca-images"
+          alt="contenidoParaTuMarca"
+        />
       ))}
     </div>
   </div>

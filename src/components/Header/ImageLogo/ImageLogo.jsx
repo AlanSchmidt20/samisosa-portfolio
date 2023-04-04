@@ -1,4 +1,4 @@
-import icon from "../../../images/samiLogo.png";
+import icon from "../../../images/samiLogoNegro.png";
 import { Image } from "mui-image";
 
 const ImageLogo = () => (

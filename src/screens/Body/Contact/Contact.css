@@ -30,12 +30,12 @@
 
 .contact-form-container p {
   font-family: "RoxboroughCF";
-  font-size: 30px;
+  font-size: 25px;
   margin-top: 10px;
 }
 
 .contact-input {
-  width: 70%;
+  width: 90%;
   height: 30px;
   border: transparent;
   padding: 10px;
@@ -52,6 +52,7 @@
     flex-direction: column-reverse;
     height: 800px;
     justify-content: flex-end;
+    /* margin-bottom: 37%; */
   }
 
   .image-container {

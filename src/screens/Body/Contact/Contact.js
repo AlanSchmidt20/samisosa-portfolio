@@ -1,25 +1,27 @@
 import "./Contact.css";
 import contactImage from "../../../images/contactImage.png";
-import { useState } from "react";
+import { useState, useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
-  /*   const [email, setEmail] = useState("");
+  const [email, setEmail] = useState("");
+  const form = useRef();
 
   const handleKeyDown = (event) => {
-    if (event.key === "Enter") {
+    if (event.key === "Enter" && email.length > 5) {
       event.preventDefault();
       sendEmail();
     }
   };
 
-  const sendEmail = () => {
+  const sendEmail = (e) => {
     // Your email js code here to handle form submission
     emailjs
       .sendForm(
-        "YOUR_SERVICE_ID",
-        "YOUR_TEMPLATE_ID",
-        "YOUR_FORM_ID",
-        "YOUR_USER_ID"
+        "service_9rcynit",
+        "template_7qoeltw",
+        form.current,
+        "vs5oM0vPGYvZafiQE"
       )
       .then((result) => {
         console.log(result.text);
@@ -28,31 +30,30 @@ const Contact = () => {
         console.log(error.text);
       });
     setEmail("");
-  }; */
+  };
   return (
     <div className="contact-container">
       <div className="image-container">
-        <img
-          alt="contact-image"
-          src={contactImage}
-          width="100%"
-          height="100%"
-        />
+        <img alt="contact" src={contactImage} width="100%" height="100%" />
       </div>
       <div className="contact-form-container">
         <h1>ELEVATE</h1>
         <p>
-          Se la/el primera/o en recibir descuentos, oportunidades únicas e
-          información exluciva.
+          Sé la/el primera/o en recibir descuentos, oportunidades únicas e
+          información exlusiva.
         </p>
-        <input
-          type="email"
-          placeholder="e-mail"
-          className="contact-input"
-          /*          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          onKeyDown={handleKeyDown} */
-        />
+        <form ref={form} onSubmit={sendEmail} className="contact-input">
+          <input
+            type="email"
+            name="email"
+            placeholder="e-mail"
+            className="contact-input"
+            required
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            onKeyDown={handleKeyDown}
+          />
+        </form>
       </div>
     </div>
   );

@@ -43,14 +43,19 @@ nav {
     transform: translateX(100vh);
     z-index: 999;
     background: white;
-    background-image: url("../../../images/samiLogo.png");
+    background-image: url("../../../images/samiLogoNegro.png");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 90%;
     background-position: center;
   }
 
   .nav-btn {
     display: inline !important;
+  }
+
+  .css-2liczv-MuiBadge-badge,
+  .css-jzzixp {
+    background-color: rgb(206, 147, 216) !important;
   }
 
   .css-1aquho2-MuiTabs-indicator {
@@ -79,5 +84,10 @@ nav {
   }
   .tab--item {
     display: block !important;
+  }
+
+  .css-1aquho2-MuiTabs-indicator,
+  .css-ttwr4n {
+    display: none;
   }
 }

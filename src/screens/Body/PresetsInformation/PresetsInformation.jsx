@@ -6,12 +6,11 @@ import { CartContext } from "../../../CartContext";
 import { useContext } from "react";
 
 const PresetsInformation = (props) => {
-  const product = props.product;
-  const cart = useContext(CartContext);
+  /*   const product = props.product;
+   */ const cart = useContext(CartContext);
 
   /*   const productQuantity = cart.getProductQuantity(product.id);
-   */ console.log(cart.items);
-
+   */
   return (
     <div className="presetsInformation-container">
       <div className="presetsInformation-title-description">
@@ -32,6 +31,7 @@ const PresetsInformation = (props) => {
                 width="100%"
                 height="90%"
                 className="presetsInformation-image"
+                alt="presetsInformation"
               />
               <Button
                 className="presetsInformation-button"

@@ -1,11 +1,15 @@
 .presets-container {
   background-image: url("../../../images/presets-backgroundImage.PNG");
   background-size: cover;
-  height: 600px;
+  height: 100vh;
+  /*   height: 600px;
+ */
+  /*   height: 90vh; */
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 25px;
+  /*   margin-top: 25px;
+ */
 }
 
 .presets-title-description {
@@ -36,6 +40,7 @@
   display: flex;
   width: 60%;
   height: 550px;
+  /* height: 70vh; */
   justify-content: space-evenly;
 }
 
@@ -65,6 +70,7 @@
   .presets-description {
     font-size: 20px;
     display: flex;
+    width: 95%;
   }
 
   .presets-images {

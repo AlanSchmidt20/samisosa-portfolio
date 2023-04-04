@@ -3,35 +3,36 @@
   background-color: #284838;
 }
 
-.cursosIntroduction-title {
-  color: white;
-  font-size: 56px;
-  font-weight: bold;
-
-  transform: skew(-20deg);
-}
-
 .cursosIntroduction-container {
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  margin: 40px 0;
+  /* margin: 30px 0; */
+  margin-top: 20px;
 }
 
 .cursosIntroduction-subDescription {
-  margin-bottom: 50px;
   color: white;
-  font-size: 20px;
+  font-size: 25px;
+  font-family: "DM Serif Display";
+  margin-top: -15px;
 }
 
 .cursosIntroduction-description {
   background-color: #e9e4dc;
   width: 75%;
   border-radius: 15px;
-  font-size: 21.6px;
-  line-height: 30px;
+  font-size: 20px;
+  line-height: 35px;
+  font-family: "Cormorant Garamond Bol";
+  margin: 40px 0;
+  padding: 35px;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 .cursosItems-container {
@@ -39,7 +40,15 @@
 }
 
 .cursosItems-title {
-  font-size: 67px;
+  font-size: 70px;
+  margin-right: -5.5%;
+  z-index: 1;
+  font-family: "DM Serif Display";
+}
+
+.cursosItems-image {
+  width: 40%;
+  height: 50%;
 }
 
 .cursosItems-title-image {
@@ -50,6 +59,299 @@
 }
 
 .cursosItems-item {
-  font-size: 20px;
-  margin: 25px 20px;
+  font-size: 25px;
+  margin: 25px 7%;
+  font-family: "Belleza";
+}
+
+.temario-container {
+  color: white;
+  margin: 10% 0;
+}
+
+.temario-title-image {
+  display: flex;
+  justify-content: center;
+  margin-right: 10%;
+}
+
+.temario-title-container {
+  width: 30%;
+  z-index: 1;
+  margin: -9% -6%;
+}
+
+.temario-title {
+  width: 100%;
+  margin: 0px 40%;
+}
+
+.temario-image {
+  width: 40%;
+  height: 50%;
+}
+
+.temario-clase {
+  background-color: #e9e4dc;
+  border-radius: 30px;
+  text-align: center;
+  width: 15%;
+  color: black;
+  font-size: 35px;
+  font-family: "Cormorant Garamond Bol";
+  margin-bottom: 10px;
+}
+
+.temario-class1-class2 {
+  margin: -15% 15%;
+}
+
+.temario-items {
+  margin: 0 0px;
+  margin-bottom: 30px;
+  font-size: 25px;
+  font-family: "Quicksand";
+  list-style: none;
+  counter-increment: item;
+}
+
+.class1 {
+  margin-bottom: 40px;
+}
+
+.temario-items:nth-child(n + 5) {
+  counter-increment: item;
+}
+
+.temario-items:before {
+  content: counter(item) ". ";
+}
+
+.class2 {
+  counter-reset: item 4;
+}
+
+.class2 .temario-items {
+  counter-increment: item;
+  list-style: none;
+}
+
+.class2 .temario-items:before {
+  content: counter(item) + 4 ". ";
+}
+
+.temario-lastItem {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  font-size: 25px;
+  font-family: "Quicksand";
+}
+
+.footerItems-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 20%;
+}
+
+.footerItems-container h1 {
+  color: white;
+  font-size: 70px;
+  text-align: right;
+  font-family: "DM Serif Display";
+  margin-right: 10px;
+}
+
+.footerItems-item-container {
+  background-color: #e9e4dc;
+  width: 70%;
+  border-radius: 40px;
+  margin: auto;
+  padding-bottom: 20%;
+}
+
+.footerItems-item-container ul {
+  list-style: none;
+  font-size: 25px;
+  font-family: "Belleza";
+}
+
+.footerImage-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: -20% auto;
+  margin-left: 5%;
+}
+
+.footerImage-image {
+  width: 45%;
+}
+
+.footerImage-logo {
+  width: 35%;
+}
+
+.footerImage-logo {
+  margin: 35% -20%;
+  z-index: 1;
+}
+
+.cursosValue-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.cursosValue-price-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.cursosValue-price-container h1 {
+  font-family: "Belleza";
+  font-size: 45px;
+}
+
+.cursosValue-price {
+  font-size: 50px !important;
+  font-family: "DM Serif Display" !important;
+}
+
+.cursosValue-price-container {
+  background-color: #e9e4dc;
+  width: 100%;
+  text-align: center;
+  padding: 2% 0;
+}
+
+.cursosValue-metodosDePago {
+  text-align: right;
+  font-size: 30px;
+  color: white;
+  margin-right: 20px;
+  line-height: 45px;
+  margin: 2.5% 2%;
+  font-family: "Open Sans Light";
+}
+
+.cursosValue-button {
+  background-color: #e9e4dc !important;
+  font-family: "Cormorant Garamond Bol" !important;
+  margin: 3% auto !important;
+}
+
+@media screen and (max-width: 720px) {
+  .cursosIntroduction-title {
+    width: 100%;
+  }
+
+  .cursosItems-title-image {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-right: 10% !important;
+  }
+
+  .cursosItems-title {
+    font-size: 40px;
+    margin-right: -25.5% !important;
+    margin-top: 40%;
+    z-index: 1;
+    font-family: "DM Serif Display";
+  }
+
+  .cursosItems-image {
+    width: 85%;
+  }
+
+  .temario-container {
+    margin: 25% 0;
+  }
+  .temario-title-image {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0px -12%;
+  }
+  .temario-title-container {
+    width: 40%;
+    z-index: 1;
+    margin: -12% -6%;
+  }
+  .temario-image {
+    width: 70%;
+  }
+
+  .temario-class1-class2 {
+    margin: -30% 0;
+    z-index: 1;
+    position: relative;
+  }
+
+  .temario-clase {
+    width: 30%;
+    font-size: 25px;
+  }
+
+  .temario-items {
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+
+  .class1,
+  .class2 {
+    padding-left: 4%;
+  }
+
+  .footerItems-container {
+    margin-top: 45%;
+  }
+
+  .footerItems-container h1 {
+    font-size: 35px;
+    margin-right: 5px;
+  }
+
+  .footerItems-item-container {
+    width: 90%;
+  }
+
+  .footerItems-item-container ul {
+    font-size: 15px;
+  }
+
+  .footerImage-logo {
+    margin: 35% -23%;
+    width: 40%;
+  }
+
+  .footerImage-image {
+    width: 60%;
+  }
+
+  .cursosValue-container {
+    padding: 20% 0;
+  }
+
+  .cursosValue-price-container h1 {
+    font-size: 27px;
+  }
+
+  .cursosValue-price {
+    font-size: 45px !important;
+  }
+
+  .cursosValue-metodosDePago {
+    font-size: 25px;
+    line-height: 35px;
+  }
+
+  .cursosValue-button {
+    background-color: #e9e4dc !important;
+    font-family: "Cormorant Garamond Bol" !important;
+    margin: 3% auto !important;
+    width: 55% !important;
+    color: black !important;
+  }
 }

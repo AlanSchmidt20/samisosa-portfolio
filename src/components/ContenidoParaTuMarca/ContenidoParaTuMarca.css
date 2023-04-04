@@ -57,6 +57,7 @@
 @media screen and (max-width: 1020px) {
   .leftImages-rightImages-container {
     flex-direction: column;
+    margin-bottom: 42%;
   }
   .contenidoParaTuMarca-images-container {
     flex-direction: row;

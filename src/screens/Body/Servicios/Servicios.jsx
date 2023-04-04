@@ -5,16 +5,21 @@ import "./Servicios.css";
 const servicioCard = modifiedServicios.map((servicio) => (
   <a
     href={servicio.service}
-    target={servicio.id != 1 ? "_blank" : ""}
+    target={servicio.id !== 1 ? "_blank" : ""}
     className="servicioCard--container"
     key={servicio.id}
+    rel="noreferrer"
   >
     <h1
       className="serviciosCard--subtitle"
       dangerouslySetInnerHTML={{ __html: servicio.title }}
     ></h1>
 
-    <img className="servicioCard--image" src={servicio.img} />
+    <img
+      className="servicioCard--image"
+      src={servicio.img}
+      alt="servicioCard"
+    />
     <h1 className="servicioCard-number">{servicio.number}</h1>
   </a>
 ));

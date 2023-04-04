@@ -1,7 +1,7 @@
 import { createContext, useState } from "react";
 import {
-  presetsInformation,
-  getProductData,
+  /*   presetsInformation,
+   */ getProductData,
 } from "./content/presetsInformation";
 
 export const CartContext = createContext({
@@ -37,6 +37,9 @@ export const CartProvider = ({ children }) => {
           quantity: 1,
         },
       ]);
+    } else if (quantity === 1) {
+      // Item already in cart with quantity of 1, do not add again
+      return;
     } else {
       setCartProducts(
         cartProducts.map((product) =>
@@ -51,7 +54,7 @@ export const CartProvider = ({ children }) => {
   function removeOneFromCart(id) {
     const quantity = getProductQuantity(id);
 
-    if (quantity == 1) {
+    if (quantity === 1) {
       deleteFromCart(id);
     } else {
       setCartProducts(
@@ -67,7 +70,7 @@ export const CartProvider = ({ children }) => {
   function deleteFromCart(id) {
     setCartProducts((cartProducts) =>
       cartProducts.filter((currentProduct) => {
-        return currentProduct.id != id;
+        return currentProduct.id !== id;
       })
     );
   }
@@ -77,6 +80,7 @@ export const CartProvider = ({ children }) => {
     cartProducts.map((cartItem) => {
       const productData = getProductData(cartItem.id);
       totalCost += productData.price * cartItem.quantity;
+      return null; //Fixing error that expects a return value from arrow function
     });
     return totalCost;
   }
