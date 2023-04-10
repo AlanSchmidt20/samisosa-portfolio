@@ -9,8 +9,7 @@ import Contact from "./screens/Body/Contact/Contact";
 import PresetsInformation from "./screens/Body/PresetsInformation/PresetsInformation";
 import CartProvider from "./CartContext";
 import ContenidoParaTuMarca from "./components/ContenidoParaTuMarca/ContenidoParaTuMarca";
-/* import Success from "./screens/Body/Success/Success";
- */ import CursosInformation from "./screens/Body/CursosInformation";
+import CursosInformation from "./screens/Body/CursosInformation";
 import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 

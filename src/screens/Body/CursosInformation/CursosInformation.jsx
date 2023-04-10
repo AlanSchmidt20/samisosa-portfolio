@@ -135,7 +135,7 @@ const CursosValue = () => {
     <div className="cursosValue-container">
       <div className="cursosValue-price-container">
         <h1>Valor total en pesos argentinos:</h1>
-        <h1 className="cursosValue-price">$15.000</h1>
+        <h1 className="cursosValue-price">$20.000</h1>
       </div>
       <div className="cursosValue-metodosDePago">
         Métodos de pago: <br></br>

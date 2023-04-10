@@ -40,7 +40,7 @@ const Contact = () => {
         <h1>ELEVATE</h1>
         <p>
           Sé la/el primera/o en recibir descuentos, oportunidades únicas e
-          información exlusiva.
+          información exclusiva.
         </p>
         <form ref={form} onSubmit={sendEmail} className="contact-input">
           <input
