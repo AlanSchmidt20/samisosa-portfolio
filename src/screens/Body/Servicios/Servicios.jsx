@@ -1,6 +1,7 @@
 import React from "react";
 import modifiedServicios from "../../../content/servicios";
 import "./Servicios.css";
+import { useLocation } from "react-router-dom";
 
 const servicioCard = modifiedServicios.map((servicio) => (
   <a
@@ -25,8 +26,16 @@ const servicioCard = modifiedServicios.map((servicio) => (
 ));
 
 const Servicios = () => {
+  const location = useLocation();
+
   return (
-    <div className="servicios--container">
+    <div
+      className={
+        location.pathname === "/servicios"
+          ? "servicios--container servicios-page-container"
+          : "servicios--container"
+      }
+    >
       <h1 className="servicios--title">SERVICIOS</h1>
       <div className="servicios--component">{servicioCard}</div>
     </div>

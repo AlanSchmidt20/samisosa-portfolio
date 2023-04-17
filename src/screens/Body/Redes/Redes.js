@@ -1,9 +1,18 @@
 import "./Redes.css";
 import { redes1, redes2 } from "../../../content/redes";
+import { useLocation } from "react-router-dom";
 
 const Redes = () => {
+  const location = useLocation();
+
   return (
-    <div className="redes-container">
+    <div
+      className={
+        location.pathname === "/redes"
+          ? "redes-container redes-page-container"
+          : "redes-container"
+      }
+    >
       <div>
         <div className="redes1-container">
           {redes1.map((item) => (

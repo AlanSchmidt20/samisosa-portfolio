@@ -74,10 +74,14 @@ a {
   .servicios--container {
     /*     height: 600px;
  */
-    height: 75vh;
+    margin-bottom: 0;
   }
   .servicios--title {
     margin-top: 180px;
+  }
+
+  .servicios-page-container {
+    height: 85vh;
   }
 }
 
@@ -90,6 +94,11 @@ a {
   .servicios--container {
     height: 450px;
   }
+
+  .servicios-page-container {
+    height: 86vh;
+  }
+
   .servicioCard--container {
     height: 200px !important;
   }
@@ -111,15 +120,26 @@ a {
 
 @media screen and (max-width: 720px) {
   .servicios--container {
-    height: 350px;
-    margin: 9% 0;
+    /*     
+ */ /*  margin: 9% 0; */
+    margin-top: 9%;
+  }
+
+  .servicios-page-container {
+    height: 83.5vh;
   }
 }
 
 @media screen and (max-width: 480px) {
   .servicios--container {
     height: 100%;
-    margin: 9% 0;
+    margin-top: 9%;
+    /*     margin: 9% 0;
+ */
+  }
+
+  .servicios-page-container {
+    height: 80vh;
   }
   .servicios--component {
     height: 100%;

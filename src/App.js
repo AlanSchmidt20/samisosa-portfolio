@@ -10,6 +10,7 @@ import PresetsInformation from "./screens/Body/PresetsInformation/PresetsInforma
 import CartProvider from "./CartContext";
 import ContenidoParaTuMarca from "./components/ContenidoParaTuMarca/ContenidoParaTuMarca";
 import CursosInformation from "./screens/Body/CursosInformation";
+import Footer from "./components/Footer/Footer";
 import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
@@ -25,28 +26,31 @@ function ScrollToTop() {
 
 function App() {
   return (
-    <CartProvider>
-      <BrowserRouter>
-        <Header />
-        <div className="screens--wraper">
-          <ScrollToTop />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="quienSoy" element={<About />} />
-            <Route path="cursos" element={<CursosInformation />} />
-            <Route path="servicios" element={<Servicios />} />
-            <Route path="presets" element={<PresetsInformation />} />
-            <Route path="subscripción" element={<Contact />} />
-            <Route path="redes" element={<Redes />} />
-            <Route
-              path="contenidoParaTuMarca"
-              element={<ContenidoParaTuMarca />}
-            />
-            {/* <Route path="success" element={<Success />} /> */}
-          </Routes>
-        </div>
-      </BrowserRouter>
-    </CartProvider>
+    <>
+      <CartProvider>
+        <BrowserRouter>
+          <Header />
+          <div className="screens--wraper">
+            <ScrollToTop />
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="quienSoy" element={<About />} />
+              <Route path="cursos" element={<CursosInformation />} />
+              <Route path="servicios" element={<Servicios />} />
+              <Route path="presets" element={<PresetsInformation />} />
+              <Route path="subscripción" element={<Contact />} />
+              <Route path="redes" element={<Redes />} />
+              <Route
+                path="contenidoParaTuMarca"
+                element={<ContenidoParaTuMarca />}
+              />
+              {/* <Route path="success" element={<Success />} /> */}
+            </Routes>
+          </div>
+        </BrowserRouter>
+      </CartProvider>
+      <Footer />
+    </>
   );
 }
 
