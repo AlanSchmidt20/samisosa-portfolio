@@ -1,7 +1,7 @@
 export const items = [
   {
     id: "1",
-    topic: " 2 clases en vivo de 3 horas.",
+    topic: "Clase grabada para siempre que la quieras ver.",
   },
   {
     id: "2",
@@ -9,34 +9,26 @@ export const items = [
   },
   {
     id: "3",
-    topic: "Grabación de las clases.",
-  },
-  {
-    id: "4",
     topic: "Documento con contenido exclusivo.",
   },
   {
-    id: "5",
-    topic: "Trabajo directo e inmediato con marcas.",
-  },
-  {
-    id: "6",
+    id: "4",
     topic: "Modelo de contrato personal.",
   },
   {
-    id: "7",
+    id: "5",
     topic: "Certificado de participación completa.",
   },
   {
-    id: "8",
+    id: "6",
     topic: "30% off en próximos cursos y membresías",
   },
   {
-    id: "9",
+    id: "7",
     topic: "Guías de meditación.",
   },
   {
-    id: "10",
+    id: "8",
     topic: "Regalos",
   },
 ];
